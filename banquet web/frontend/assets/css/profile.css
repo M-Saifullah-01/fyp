@@ -1,0 +1,28 @@
+html{
+    scroll-behavior: smooth;
+}
+
+/* profile */
+.profile{
+    padding-top: 120px;
+}
+
+@media(max-width: 480px){
+    .profile{
+        padding-top: 25px;
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+.profile .card .card-header h3{
+    font-size: 20px;
+}
+.profile .card .card-body form .row label,
+.profile .card .card-body form .row input{
+font-size: 10px;
+}
+.profile .card .card-body form button{
+font-size: 10px;
+}
+}

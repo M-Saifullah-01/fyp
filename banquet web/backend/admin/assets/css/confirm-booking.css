@@ -1,0 +1,30 @@
+body{
+    overflow-x: hidden;
+}
+/*nav*/
+nav{
+    background-color: #34495e;
+}
+nav .dropdown .main i{
+    font-size: 30px;
+ }
+.dropdown-menu {
+    white-space: nowrap;
+    width: auto !important; /* Override Bootstrap's default width */
+      min-width: 0; /*Remove minimum width*/  
+} 
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+.dropdown .dropdown-menu .dropdown-item:hover{
+    background-color: #676b70;
+    color: white;
+}
+.dropdown .dropdown-menu .dropdown-item:active{
+    background-color: #34495e !important;
+}
+
+ nav .dropdown .main i{
+    font-size: 30px;
+ }

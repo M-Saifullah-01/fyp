@@ -1,0 +1,244 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.background-video, 
+.hero img, 
+.plaining .card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* To prevent overflow: */
+body, html {
+    overflow-x: hidden;
+}
+
+
+button{
+    border: none;
+}
+
+/*hero*/
+.hero{
+    width: 100%;
+    height: 92vh;
+    position: relative;
+}
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+     width: 100%; 
+     height: 100%; /*Make the video cover the entire hero section */
+    overflow: hidden;
+}
+.background-video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero .hero-heading{
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) !important;
+    z-index: 99;
+}
+.hero .bg-clr{
+    background-color: #00000069;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+
+p{
+    font-size: 18px;
+}
+.about{
+    background-color: #343a40bf;
+}
+/*plaining*/
+.plaining .card .bg_frst_img{
+height: 430px;
+object-fit: cover;
+}
+.plaining .card .main-text{
+    /* background-color: #ffffff7d; */
+    background-color: #00000069;
+    width:400px;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Services*/
+.services .card{        
+    border-radius: 7px;
+}
+.services .card {        
+    height: 250px;
+    border-radius: 7px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.services .card .card-heading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    display: none;
+}
+.services .card:hover .card-heading{
+    display: block;
+    z-index: 99;    
+}
+.services .card:hover{
+    cursor: pointer;
+}
+.services .card::before{
+    content: "";
+    width: 0px;
+    height: 100%;
+    background-color: #343a40bf;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    transition: 0.9s all;
+}
+.services .card:hover:before{
+    width: 100%;
+    border-radius: 7px;
+}
+
+.services .services-btn{
+    background-color: #292d30; 
+    font-size: 18px;
+    border-radius: 5px;
+}
+.services .service-see-btn a{
+    background-color: #292d30;
+    font-size: 18px;
+}
+.services .service-see-btn a:hover{
+    background-color: #343a40fd;
+}
+
+/* hall */
+.hall .card .card-body .card .card-header{
+    height: 250px;
+}
+.hall-book-btn{
+    background-color: #292d30; 
+    border-radius: 5px;
+    font-size: 18px;
+}
+.hall-book-btn:hover{
+    background-color: #3f4b54;
+}
+.sub-p{
+    font-size: 15px;
+}
+
+/*message*/
+.message{
+    background-color: #343a40bf;
+}
+.message button:hover{
+    background-color: #343a40fd;
+}
+.message button{
+    background-color: #343a40bf;
+    font-size: 18px;
+}
+
+
+@media (max-width: 480px) {
+
+.hero h1{
+    font-size: 18px !important;
+}
+.hero h1 .banquet_vanues,
+.plaining .card .main-text .main-text-paragraph{
+display: none;
+}
+.plaining .card .main-text{
+    width:130px !important;
+}
+/* .plaining .card .bg_frst_img, */
+.plaining .card{
+    height: 150px !important;
+}
+.plaining .card .bg_scd_img,
+.plaining .card .bg_frst_img{
+height: 150px;
+}
+.plaining .card .main-text h1{
+    font-size: 8px !important;
+    /* padding: 0 !important;
+    margin: 0 !important; */
+}
+.plaining .card ,
+.plaining .card img{
+height: 120px;
+}
+/* about */
+.about h1{
+font-size: 22px;
+}
+.about .row  img{
+    height: 250px !important;
+    object-fit: cover;
+}
+.about .row .imge_div h2{
+    font-size: 18px;
+}
+.about .row .imge_div p{
+    font-size: 12px;
+}
+/* hall */
+.hall .card .card-header h1{
+    font-size: 22px;
+}
+.hall .card .card-header p{
+    font-size: 18px;
+}
+.hall .card .card-body .card .card-header{
+    height: 130px;
+}
+.hall .card .card-body .card .card-body h5{
+    font-size: 16px;
+}
+.hall .card .card-body .card .card-body p{
+font-size: 13px;
+}
+.hall-book-btn{    
+    font-size: 12px !important;
+}
+
+/* message */
+.message h2{
+    font-size: 22px;
+}
+.message .row h2,
+.message .row h3{
+    font-size: 18px;
+}
+.message .row p,
+.message .row form input,
+.message .row form textarea{
+    font-size: 12px;
+}
+/* location */
+.location h2{
+    font-size: 22px;
+}
+}

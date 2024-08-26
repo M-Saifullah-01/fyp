@@ -1,0 +1,55 @@
+html {
+    scroll-behavior: smooth;
+}
+nav {
+    position: fixed; /* Keeps the header at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* High z-index to ensure it is above other elements */
+    background-color: white; /* Background color to ensure readability */
+}
+
+.payment {
+    height: 90vh;
+    overflow: visible; /* Adjust or remove if needed */
+    background-color: #f8f9fa;
+    position: relative; /* Ensure it is positioned correctly */
+    z-index: 1; /* Lower z-index to ensure it stays below the header */
+}
+
+.payment-card {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+ul li {
+    list-style: none;
+}
+
+.payment i {
+    font-size: 30px;
+}
+
+@media (max-width: 480px) {
+    .payment-card {
+        margin: 10px;
+    }
+
+    .payment-card a,
+    .payment-card h3 {
+        font-size: 15px;
+    }
+
+    .payment-card .row .logo p {
+        font-size: 10px;
+    }
+
+    .payment-card ul li {
+        font-size: 10px;
+    }
+}

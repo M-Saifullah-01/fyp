@@ -1,0 +1,40 @@
+body{
+    overflow-x: hidden;
+}
+/* navbar */
+nav{
+    background-color: #34495e;
+     /* margin-left: 250px; */
+}
+nav .logout-bton{
+    background-color: #676b70;
+}
+/* nav .main-login span{
+    display: flex;
+    flex-direction: column; /* A tags ko column (vertical) me arrange karta hai */
+    /* align-items: center; */
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+.dropdown .dropdown-menu .dropdown-item:hover{
+    background-color: #676b70;
+    color: white;
+}
+.dropdown .dropdown-menu .dropdown-item:active{
+    background-color: #34495e !important;
+}
+
+ /* nav .dropdown .main i{
+    border-radius: 55%;
+ } */
+ nav .dropdown .main i{
+    font-size: 30px;
+ }
+.dropdown-menu {
+    white-space: nowrap;
+    width: auto !important; /* Override Bootstrap's default width */
+      min-width: 0; /*Remove minimum width*/  
+} 

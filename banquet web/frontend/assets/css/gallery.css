@@ -1,0 +1,64 @@
+html{
+    scroll-behavior: smooth;
+}
+
+/*hero*/
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 350px; /* Set height for the hero section */
+    overflow: hidden;
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+     width: 100%; 
+     height: 100%; /*Make the video cover the entire hero section */
+    overflow: hidden;
+}
+
+.bg-video video {
+    width: 100%;
+    height: 100%; 
+     object-fit: cover; /*Ensures the video covers the area without distortion */
+} 
+.hero .bg-clr{
+    background-color: #00000069;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;   
+}
+ .hero .bg-video h1{
+    color: white;
+    margin-top: 180px;
+}  
+
+
+/*gallery*/
+.gallery .row a img{
+    object-fit: cover;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.6s all;
+}
+.gallery .row a img:hover{
+    transform: scale(0.9);
+}
+
+@media (max-width: 480px) {
+.hero{
+    height: 200px;
+}
+.hero .bg-video h1{
+    margin-top: 90px;
+    font-size: 25px;
+}
+.gallery .card .card-body .row a img{
+    height: 140px;
+}
+}

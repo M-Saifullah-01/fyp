@@ -1,0 +1,37 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.booking{
+    padding-top: 30px;
+}
+.booking .card .card-body form button{
+    border: none;
+    background-color: #343a40bf;
+}
+
+
+@media (max-width: 480px) {
+    .booking{
+        padding-top: 20px;
+    }
+.booking .card .card-header h3{
+    font-size: 20px;
+}
+.booking .card .card-body .row label,
+.booking .card .card-body .row select,
+.booking .card .card-body .row input{
+    font-size: 10px;
+}
+.booking .card .card-body .row button{
+    font-size: 12px !important;
+}
+.swal2-title-custom {
+    font-size: 12px; /* Adjust the title font size here */
+}
+
+.swal2-content-custom {
+    font-size: 12px; /* Adjust the content text font size here */
+}
+
+}

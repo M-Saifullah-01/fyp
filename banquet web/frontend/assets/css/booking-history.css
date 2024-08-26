@@ -1,0 +1,36 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.booking-history {
+    padding-top: 100px;
+}
+
+.booking-history .card .card-header a {
+    font: 30px;
+}
+
+.booking-history .card .card-header h3 {
+    margin-left: 48px;
+}
+
+@media (max-width: 480px) {
+    .booking-history {
+        padding-top: 25px;
+    }
+
+    .booking-history .card .card-header a,
+    .booking-history .card .card-header h3 {
+        font: 12px;
+    }
+
+    .booking-history .card .card-header h3 {
+        margin-left: 20px;
+    }
+
+    .booking-history .card .card-body tr th,
+    .booking-history .card .card-body tr td,
+    .booking-history .card .card-body tr td a{
+        font-size: 12px;
+    }
+}
